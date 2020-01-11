@@ -18,8 +18,8 @@
 
                 <!-- Right aligned nav items -->
                 <b-navbar-nav class="ml-auto">
-                    <b-nav-form>
-                        <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
+                    <b-nav-form @submit.prevent="false" @submit="search()">
+                        <b-form-input size="sm" class="mr-sm-2" placeholder="Search" v-model="searchContent"></b-form-input>
                         <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
                     </b-nav-form>
 
@@ -48,7 +48,21 @@
     </div>
 </template>
 
-
+<script>
+export default {
+    data(){
+        return {
+            searchContent: ''
+        }
+    },
+    methods: {
+        search(){
+            this.$router.replace({ path: 'tickets', query: { search: this.searchContent } });
+        }
+    }
+    
+}
+</script>
 
 <style lang="scss">
     @import '../node_modules/bootstrap/dist/css/bootstrap.css';

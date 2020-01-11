@@ -7,9 +7,9 @@
 
         <div class="">
             
-            <span>Search: </span><input v-model="search">
+            <!-- <span>Search: </span><input type="text" v-model="search" placeholder="Search listings..."> -->
 
-            <b-card no-body class="overflow-hidden mx-auto mt-4" style="max-width: 1024px;" v-for="item in items" :key="item.id">
+            <b-card no-body class="overflow-hidden mx-auto mt-4" style="max-width: 1024px;" v-for="item in filteredListings" :key="item.id">
                 <b-row no-gutters>
                     <b-col md="12">
                         <b-card-body :title="item.title">
@@ -36,10 +36,22 @@
 
         data() {
             return {
-                search: '',
+                search: this.$route.query.search,
                 items: events
 
             }
+        },
+        computed: {
+            filteredListings: function(){
+                return this.items.filter((item)=> {
+                    return item.title.toLowerCase().match(this.search.toLowerCase());
+                });
+            }
+        },
+        watch: {
+            '$route' (to, from) {
+                this.search = to.query.search;
+            }     
         },
 
 
