@@ -9,9 +9,10 @@
             
             <span>Search: </span><input v-model="search">
 
-            <b-card no-body class="overflow-hidden mx-auto mt-4" style="max-width: 1024px;" v-for="item in items" :key="item.id">
+            <b-card class="overflow-hidden mx-auto mt-4" style="max-width: 1024px;" v-for="item in items" :key="item.id" >
                 <b-row no-gutters>
                     <b-col md="12">
+						<b-img src="item.icon" fluid alt="Concert Image" ></b-img>
                         <b-card-body :title="item.title">
                             <b-card-text>
                                 <p>In {{ item.venue }} on {{ item.date }}</p>
@@ -29,6 +30,7 @@
 
 
 <script>
+	import events from '../assets/events.json'
     export default {
 
         name: 'listing',
@@ -36,32 +38,7 @@
         data() {
             return {
                 search: '',
-                items: [
-
-                    {
-                        id: 1,
-                        title: 'Metallica',
-                        date: '2020-01-05',
-                        venue: 'Antibes'
-
-                    },
-                    {
-                        id: 2,
-                        title: 'Ariana Grande',
-                        date: '2020-01-20',
-                        venue: 'Nice'
-
-                    },
-                    {
-                        id: 3,
-                        title: 'Snoop Dogg',
-                        date: '2020-02-15',
-                        venue: 'Cannes'
-
-                    },
-
-
-                ],
+                items: events
 
             }
         },
