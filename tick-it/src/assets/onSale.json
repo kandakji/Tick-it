@@ -1,0 +1,110 @@
+[
+	{
+		"id": 1,
+		"title": "Adele 25",
+		"artist": "Adele",
+		"numTickets": "1",
+		"minTickets": "1",
+		"venue": "Altherax",
+		"date": "2020-01-17",
+		"time": "8:00 PM",
+		"city": "Nice",
+		"country": "France",
+		"icon" : "../assets/mic.jpg"
+	},
+	{
+		"id": 2,
+		"title": "Adele 25",
+		"artist": "Adele",
+		"numTickets": "5",
+		"minTickets": "2",
+		"venue": "London Stadium",
+		"date": "2020-01-19",
+		"time": "8:00 PM",
+		"city": "London",
+		"country": "United Kingdom",
+		"icon" : "../assets/mic.jpg"
+
+	},
+	{
+		"id": 3,
+		"title": "Adele 25",
+		"artist": "Adele",
+		"numTickets": "5",
+		"minTickets": "2",
+		"venue": "Royal Swedish Opera",
+		"date": "2020-01-24",
+		"time": "8:00 PM",
+		"city": "Stockholm",
+		"country": "Sweden",
+		"icon" : "../assets/mic.jpg"
+
+	},
+	{
+		"id": 4,
+		"title": "Adele 25",
+		"artist": "Adele",
+		"numTickets": "5",
+		"minTickets": "2",
+		"venue": "Moulin Rouge",
+		"date": "2020-01-26",
+		"time": "8:00 PM",
+		"city": "Paris",
+		"country": "France",
+		"icon" : "../assets/mic.jpg"
+
+	},
+	{
+		"id": 5,
+		"title": "Adele 25",
+		"artist": "Adele",
+		"numTickets": "5",
+		"minTickets": "2",
+		"venue": "Hercules Hall",
+		"date": "2020-01-31",
+		"time": "8:00 PM",
+		"city": "Munich",
+		"country": "Germany",
+		"icon" : "../assets/mic.jpg"
+
+	},
+	{
+		"id": 6,
+		"title": "World Wired Tour",
+		"artist": "Metallica",
+		"numTickets": "5",
+		"minTickets": "2",
+		"venue": "London Stadium",
+		"date": "2020-01-08",
+		"time": "8:00 PM",
+		"city": "London",
+		"country": "United Kingdom",
+		"icon" : "../assets/concert1.jpg"
+
+	},
+	{
+		"id": 7,
+		"title": "World Wired Tour",
+		"artist": "Metallica",
+		"numTickets": "1",
+		"minTickets": "1",
+		"venue": "Teatro Regio di Torino",
+		"date": "2020-01-14",
+		"time": "8:00 PM",
+		"city": "Turin",
+		"icon" : "../assets/concert1.jpg"
+	},
+	{
+		"id": 8,
+		"title": "World Wired Tour",
+		"artist": "Metallica",
+		"numTickets": "1",
+		"minTickets": "1",
+		"venue": "Barcelo Theater",
+		"date": "2020-01-17",
+		"time": "8:00 PM",
+		"city": "Madrid",
+		"country": "Spain",
+		"icon" : "../assets/concert1.jpg"
+	}
+]
