@@ -29,6 +29,7 @@
 
 
 <script>
+    import events from '../assets/events.json'
     export default {
 
         name: 'listing',
@@ -36,32 +37,7 @@
         data() {
             return {
                 search: '',
-                items: [
-
-                    {
-                        id: 1,
-                        title: 'Metallica',
-                        date: '2020-01-05',
-                        venue: 'Antibes'
-
-                    },
-                    {
-                        id: 2,
-                        title: 'Ariana Grande',
-                        date: '2020-01-20',
-                        venue: 'Nice'
-
-                    },
-                    {
-                        id: 3,
-                        title: 'Snoop Dogg',
-                        date: '2020-02-15',
-                        venue: 'Cannes'
-
-                    },
-
-
-                ],
+                items: events
 
             }
         },
