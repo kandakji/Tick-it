@@ -6,7 +6,9 @@
                 <b-tab title="On Sale" :class="{ active: onSaleTab}">
                     <b-card no-body v-for="sItem in filteredOnSale" :key="sItem.id">
 					<div class="card-tab">
-						<b-img-lazy class="card-img" :src="buildIconUrl(sItem.icon)"> </b-img-lazy>
+                        <div class="card-img">
+						    <b-img-lazy :src="buildIconUrl(sItem.icon)"> </b-img-lazy>
+                        </div>
                         <b-card-body :title="sItem.title"  :sub-title="sItem.artist">
 							<div class="card-holder">
                             <div class="card-info">
@@ -95,7 +97,7 @@
 
 <style>
 .card{
-    width: 100%;
+    /* width: 100%; */
     display: table;
     margin: 1%;
 }
@@ -103,6 +105,7 @@
 	display:table-cell;
     width: 80%;
 }
+
 a {
     color: #17a2b8;
 }
@@ -113,44 +116,54 @@ a:hover {
     margin-top: 2%;
 }
 .card-title{
+    float: left;
+    clear: left;
     text-align: left;
     width: 100%;
 }
 .card-subtitle {
     text-align: left;
+    width: 100%;
 }
 .card-info{
     display: table-row;
-	width: 80%;
+    width: 100%;
 }
 .card-text{
     text-align: left;
     display: table-cell;
-    width: 70%;
+    width: 80%;
 }
 .card-btn {
     display: table-cell;
-    width: 30%;
+    width: 20%;
 }
 .card-tab{
 	display: table-row;
+    /* width: 100% */
 }
 .card-img{
 	display: table-cell;
-	witdth: 20vw;
-	height: 20vw;
-	vertical-align: top;
+	width: 30%;
+    
 }
+
+.card-img img{
+    width: 90%;
+    padding: 2%
+}
+
 .card-holder{
 	display: table;
-	width: 100%;
+    width: 100%
 	
 }
 .btn-primary {
     margin: 1%;
-    width: 90%;
     background-color: #17a2b8;
     border-color: #ffffff;
+    float:none;
+    width: 90%
 }
 .btn-primary:hover{
     background-color: #14b5ce;
