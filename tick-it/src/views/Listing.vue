@@ -29,7 +29,9 @@
                 <b-tab title="Requested">
                     <b-card no-body v-for="rItem in filteredRequested" :key="rItem.id">
 					<div class="card-tab">
-						<b-img-lazy class="card-img" :src="buildIconUrl(rItem.icon)"> </b-img-lazy>
+                        <div class="card-img">
+						    <b-img-lazy :src="buildIconUrl(rItem.icon)"> </b-img-lazy>
+                        </div>
                         <b-card-body :title="rItem.title"  :sub-title="rItem.artist">
                             <div class="card-holder">
 							<div class="card-info">
