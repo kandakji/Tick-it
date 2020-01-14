@@ -58,7 +58,7 @@ export default {
     },
     methods: {
         search(){
-            this.$router.replace({ path: 'tickets', query: { search: this.searchContent } }).catch(err => {});
+            this.$router.push({ path: '/tickets', query: { search: this.searchContent } }).catch(err => {});
         }
     }
     

@@ -40,8 +40,8 @@
                                     <p>On {{ rItem.date }} - {{rItem.city}},{{rItem.country}}</p>
                                 </b-card-text>
                                 <div class="card-btn">
-                                    <b-button v-bind:href="'/request/'+ rItem.id" variant="primary">Make Offer</b-button>
-                                    <b-button v-bind:href="'/request/'+ rItem.id" variant="primary">Details</b-button>
+                                    <b-button v-bind:href="'/requested/'+ rItem.id" variant="primary">Make Offer</b-button>
+                                    <b-button v-bind:href="'/requested/'+ rItem.id" variant="primary">Details</b-button>
                                 </div>
                             </div>
 							</div>
@@ -51,7 +51,6 @@
                 </b-tab>
             </b-tabs>
         </b-card>
-
     </div>
 
 </template>
@@ -99,7 +98,7 @@
 
 <style>
 .card{
-    /* width: 100%; */
+    width: 100%;
     display: table;
     margin: 1%;
 }

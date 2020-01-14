@@ -23,15 +23,15 @@
                  <b-input-group-text >{{item.numTickets}} Max</b-input-group-text>
             </template>
         </b-input-group>
-        <b-button href="#" variant="primary">Buy Now</b-button>
+        <b-button href="#" variant="primary">Respond Now</b-button>
         </b-card>
     </div>
 </template>
 
 <script>
-import onSaleEvents from '../assets/onSale.json'
+import onSaleEvents from '../assets/requested.json'
 export default {
-    name: 'onsale',
+    name: 'requested',
     data(){
         return {
             item: onSaleEvents.filter((obj)=>{ return obj.id === parseInt(this.$route.params.id);}).pop(),
