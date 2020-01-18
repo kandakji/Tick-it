@@ -80,7 +80,9 @@ export default {
     background-color: #17a2b8;
     border-color: #ffffff;
     float: left;
-    width: 30%
+    width: 30%;
+    font-size: 90%;
+    white-space: nowrap;
 }
 .btn-primary:hover{
     background-color: #14b5ce;

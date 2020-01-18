@@ -10,7 +10,8 @@
 		"time": "8:00 PM",
 		"city": "Nice",
 		"country": "France",
-		"icon" : "mic1.jpg"
+		"icon" : "mic1.png",
+		"verified": false
 	},
 	{
 		"id": 2,
@@ -23,7 +24,8 @@
 		"time": "8:00 PM",
 		"city": "London",
 		"country": "United Kingdom",
-		"icon" : "mic2.jpg"
+		"icon" : "mic2.jpg",
+		"verified": true
 
 	},
 	{
@@ -37,7 +39,8 @@
 		"time": "8:00 PM",
 		"city": "Stockholm",
 		"country": "Sweden",
-		"icon" : "mic1.jpg"
+		"icon" : "mic1.png",
+		"verified": false
 
 	},
 	{
@@ -51,7 +54,8 @@
 		"time": "8:00 PM",
 		"city": "Paris",
 		"country": "France",
-		"icon" : "mic2.jpg"
+		"icon" : "mic2.jpg",
+		"verified": true
 
 	},
 	{
@@ -65,7 +69,8 @@
 		"time": "8:00 PM",
 		"city": "Munich",
 		"country": "Germany",
-		"icon" : "mic1.jpg"
+		"icon" : "mic1.png",
+		"verified": true
 
 	},
 	{
@@ -79,7 +84,8 @@
 		"time": "8:00 PM",
 		"city": "London",
 		"country": "United Kingdom",
-		"icon" : "concert2.jpg"
+		"icon" : "concert2.jpg",
+		"verified": true
 
 	},
 	{
@@ -92,7 +98,9 @@
 		"date": "2020-01-14",
 		"time": "8:00 PM",
 		"city": "Turin",
-		"icon" : "concert4.jpg"
+		"country": "Italy",
+		"icon" : "concert4.jpg",
+		"verified": false
 	},
 	{
 		"id": 8,
@@ -105,6 +113,7 @@
 		"time": "8:00 PM",
 		"city": "Madrid",
 		"country": "Spain",
-		"icon" : "concert3.jpg"
+		"icon" : "concert3.jpg",
+		"verified": true
 	}
 ]

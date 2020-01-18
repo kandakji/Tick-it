@@ -100,7 +100,6 @@
 .card{
     width: 100%;
     display: table;
-    margin: 1%;
 }
 .card-body{
 	display:table-cell;
@@ -164,7 +163,9 @@ a:hover {
     background-color: #17a2b8;
     border-color: #ffffff;
     float:none;
-    width: 90%
+    width: 90%;
+    font-size: 90%;
+    white-space: nowrap;
 }
 .btn-primary:hover{
     background-color: #14b5ce;

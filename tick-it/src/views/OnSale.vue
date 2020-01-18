@@ -5,7 +5,7 @@
         img-alt="Card image"
         img-left class="mb-3"
         img-height="250vw">
-        <b-card-title>{{item.title}} <b-badge variant="success">Verified</b-badge></b-card-title>
+        <b-card-title>{{item.title}} <b-badge v-if="item.verified" variant="success">Verified</b-badge></b-card-title>
         <b-card-sub-title>{{item.artist}}	</b-card-sub-title>
         <b-card-text>
             <p><br>
@@ -80,7 +80,9 @@ export default {
     background-color: #17a2b8;
     border-color: #ffffff;
     float: left;
-    width: 30%
+    width: 30%;
+    font-size: 90%;
+    white-space: nowrap;
 }
 .btn-primary:hover{
     background-color: #14b5ce;
