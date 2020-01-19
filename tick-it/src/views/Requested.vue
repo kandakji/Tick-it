@@ -14,7 +14,7 @@
             <br>
             </p>
         </b-card-text>
-        <b-input-group class="mt-3">
+        <b-input-group class="mt-3" v-if="!isMobile()">
             <template v-slot:prepend>
                 <b-input-group-text >{{quantity}} Tickets</b-input-group-text>
             </template>
@@ -23,6 +23,15 @@
                  <b-input-group-text >{{item.numTickets}} Max</b-input-group-text>
             </template>
         </b-input-group>
+        <div class="num-tickets" v-else>
+            Number of Tickets
+            <b-form-input
+            type="number"
+            v-model="quantity"
+            :min="item.minTickets"
+            :max="item.numTickets"
+            ></b-form-input>
+        </div>
         <b-button href="#" variant="primary">Respond Now</b-button>
         </b-card>
     </div>
@@ -41,6 +50,12 @@ export default {
     methods: {
         buildIconUrl(icon) {
             return require(`../assets/${icon}`);
+        },isMobile() {
+            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                return true
+            } else {
+                return false
+            }
         }
     },
     created(){
@@ -76,11 +91,11 @@ export default {
 }
 
 .btn-primary {
-    margin: 1%;
+    margin-top: 1%;
     background-color: #17a2b8;
     border-color: #ffffff;
-    float: left;
-    width: 30%;
+    float:left;
+    /* width: 10vw; */
     font-size: 90%;
     white-space: nowrap;
 }
@@ -96,6 +111,15 @@ export default {
 
 .card-img-left{
     margin: 2vw;
+}
+
+.card-img-left{
+    width: 25vw;
+    height: 25vw;
+}
+
+.num-tickets{
+    text-align: left;
 }
 
 </style>

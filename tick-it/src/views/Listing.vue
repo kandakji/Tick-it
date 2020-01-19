@@ -18,7 +18,7 @@
                                 </b-card-text>
                                 <div class="card-btn">
                                     <b-button v-bind:href="'/onsale/'+ sItem.id" variant="primary">Buy Now</b-button>
-                                    <b-button v-bind:href="'/onsale/'+ sItem.id" variant="primary">Details</b-button>
+                                    <!-- <b-button v-bind:href="'/onsale/'+ sItem.id" variant="primary">Details</b-button> -->
                                 </div>
                             </div>
 							</div>
@@ -41,7 +41,7 @@
                                 </b-card-text>
                                 <div class="card-btn">
                                     <b-button v-bind:href="'/requested/'+ rItem.id" variant="primary">Make Offer</b-button>
-                                    <b-button v-bind:href="'/requested/'+ rItem.id" variant="primary">Details</b-button>
+                                    <!-- <b-button v-bind:href="'/requested/'+ rItem.id" variant="primary">Details</b-button> -->
                                 </div>
                             </div>
 							</div>
@@ -149,9 +149,9 @@ a:hover {
 }
 
 .card-img img{
-    width: 30vw;
-    height: 30vw;
-    padding: 2%
+    width: 25vw;
+    height: 25vw;
+    margin: 5%
 }
 
 .card-holder{
