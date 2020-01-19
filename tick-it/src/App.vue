@@ -18,7 +18,7 @@
 
                 <!-- Right aligned nav items -->
                 <b-navbar-nav class="ml-auto">
-					<b-nav-item to="/createNew">
+					<b-nav-item v-on:click="createNew">
 						<v-icon name="plus" scale="2"/>
 					</b-nav-item>
                     <b-nav-form v-on:submit.prevent @submit="search()">
@@ -35,7 +35,10 @@
 
                     <b-nav-item-dropdown right>
                         <!-- Using 'button-content' slot -->
-                        <template v-slot:button-content>
+                        <template v-slot:button-content v-if="signedOn">
+                            <em>{{signinName}}</em>
+                        </template>
+                        <template v-slot:button-content v-else>
                             <em>User</em>
                         </template>
                         <b-dropdown-item v-if="signedOn"  href="/profile">Profile</b-dropdown-item>
@@ -156,6 +159,7 @@ export default {
         return {
             searchContent: '',
             signedOn: false,
+            signinName: '',
             signinEmail: '',
             signinPassword: '',
             signupName: '',
@@ -175,7 +179,7 @@ export default {
             this.validation_signin = null;
             if(localStorage.getItem(this.signinEmail)){
                 console.log("User found");
-                if(localStorage.getItem(this.signinEmail) == this.signinPassword){
+                if(JSON.parse(localStorage.getItem(this.signinEmail)).password == this.signinPassword){
                     console.log("Sign In Successful");
                     sessionStorage.setItem('signin',this.signinEmail);
                     this.signedOn = true;
@@ -200,7 +204,7 @@ export default {
                     this.validation_email_exist = false;
                 }else{
                     console.log("Sign Up successfull");
-                    localStorage.setItem(this.signupEmail, this.signupPassword);
+                    localStorage.setItem(this.signupEmail, JSON.stringify({name: this.signupName, password: this.signupPassword,}));
                     sessionStorage.setItem('signin', this.signupEmail);
                     this.signedOn = true;
                     this.$refs['signin-modal'].hide()
@@ -213,11 +217,22 @@ export default {
             console.log("Signed out")
             this.signedOn = false;
             sessionStorage.removeItem('signin');
+        },
+        createNew(){
+            if(sessionStorage.getItem('signin')){
+                console.log("Signed in")
+                this.$router.push({ path: '/createNew'}).catch(err => {});
+            }else{
+            console.log("Not signed In")
+            this.$refs['signin-modal'].show()
+        }
         }
     },created(){
         if(sessionStorage.getItem('signin')){
             console.log("Signed in")
             this.signedOn = true;
+            this.signinEmail = sessionStorage.getItem('signin');
+            this.signinName = JSON.parse(localStorage.getItem(this.signinEmail)).name;
         }
     }
     
@@ -253,6 +268,7 @@ export default {
         color: #42b983;
         
     }
+    
     .modal-btn{
         margin-right : 5% !important;
         margin-top: 3%;

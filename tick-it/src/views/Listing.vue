@@ -149,7 +149,8 @@ a:hover {
 }
 
 .card-img img{
-    width: 90%;
+    width: 30vw;
+    height: 30vw;
     padding: 2%
 }
 
