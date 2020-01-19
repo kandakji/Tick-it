@@ -7,7 +7,7 @@
                     <b-card no-body v-for="sItem in filteredOnSale" :key="sItem.id">
 					<div class="card-tab">
                         <div class="card-img">
-						    <b-img-lazy :src="buildIconUrl(sItem.icon)"> </b-img-lazy>
+						    <b-img-lazy :src="buildIconUrl(sItem.icon)" width="100vw" height="300vw"> </b-img-lazy>
                         </div>
                         <b-card-body :title="sItem.title"  :sub-title="sItem.artist">
 							<div class="card-holder">
@@ -30,7 +30,7 @@
                     <b-card no-body v-for="rItem in filteredRequested" :key="rItem.id">
 					<div class="card-tab">
                         <div class="card-img">
-						    <b-img-lazy :src="buildIconUrl(rItem.icon)"> </b-img-lazy>
+						    <b-img-lazy :src="buildIconUrl(rItem.icon)" width="100vw" height="300vw"> </b-img-lazy>
                         </div>
                         <b-card-body :title="rItem.title"  :sub-title="rItem.artist">
                             <div class="card-holder">
