@@ -10,7 +10,9 @@
 		"time": "8:00 PM",
 		"city": "London",
 		"country": "United Kingdom",
-		"icon" : "concert2.jpg"
+		"icon" : "metallica1.jpg",
+		"verified": true,
+		"promo": "metallica.mp3"
 	},
 	{
 		"id": 10,
@@ -23,7 +25,9 @@
 		"time": "6:00 PM",
 		"city": "Paris",
 		"country": "France",
-		"icon" : "girl_singer.jpg"
+		"icon" : "grande1.jpg",
+		"verified": false,
+		"promo": "grande.mp3"
 	},
 	{
 		"id": 11,
@@ -36,7 +40,9 @@
 		"time": "6:00 PM",
 		"city": "Paris",
 		"country": "France",
-		"icon" : "girl_singer.jpg"
+		"icon" : "grande2.jpg",
+		"verified": true,
+		"promo": "grande.mp3"
 	},
 	{
 		"id": 12,
@@ -49,7 +55,9 @@
 		"time": "6:00 PM",
 		"city": "Paris",
 		"country": "France",
-		"icon" : "girl_singer.jpg"
+		"icon" : "grande1.jpg",
+		"verified": false,
+		"promo": "grande.mp3"
 	},
 	{
 		"id": 13,
@@ -62,7 +70,9 @@
 		"time": "6:00 PM",
 		"city": "Paris",
 		"country": "France",
-		"icon" : "girl_singer.jpg"
+		"icon" : "grande2.jpg",
+		"verified": false,
+		"promo": "grande.mp3"
 	},
 	{
 		"id": 14,
@@ -75,7 +85,9 @@
 		"time": "6:00 PM",
 		"city": "Helsinki",
 		"country": "Finland",
-		"icon" : "girl_singer.jpg"
+		"icon" : "grande1.jpg",
+		"verified": true,
+		"promo": "grande.mp3"
 	},
 	{
 		"id": 15,
@@ -88,7 +100,9 @@
 		"time": "6:00 PM",
 		"city": "Helsinki",
 		"country": "Finland",
-		"icon" : "girl_singer.jpg"
+		"icon" : "grande2.jpg",
+		"verified": false,
+		"promo": "grande.mp3"
 	},
 	{
 		"id": 16,
@@ -101,7 +115,9 @@
 		"time": "10:00 PM",
 		"city": "Stockholm",
 		"country": "Sweden",
-		"icon" : "concert2.jpg"
+		"icon" : "snoop.jpg",
+		"verified": false,
+		"promo": "snoop.mp3"
 	},
 	{
 		"id": 17,
@@ -114,6 +130,8 @@
 		"time": "10:00 PM",
 		"city": "London",
 		"country": "United Kingdom",
-		"icon" : "concert2.jpg"
+		"icon" : "snoop.jpg",
+		"verified": true,
+		"promo": "snoop.mp3"
 	}
 ]

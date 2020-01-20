@@ -10,7 +10,8 @@
 		"time": "8:00 PM",
 		"city": "Nice",
 		"country": "France",
-		"icon" : "mic1.png",
+		"icon" : "adele1.png",
+		"promo": "adele.mp3",
 		"verified": false
 	},
 	{
@@ -24,7 +25,8 @@
 		"time": "8:00 PM",
 		"city": "London",
 		"country": "United Kingdom",
-		"icon" : "mic2.jpg",
+		"icon" : "adele2.jpg",
+		"promo": "adele.mp3",
 		"verified": true
 
 	},
@@ -39,7 +41,8 @@
 		"time": "8:00 PM",
 		"city": "Stockholm",
 		"country": "Sweden",
-		"icon" : "mic1.png",
+		"icon" : "adele1.png",
+		"promo": "adele.mp3",
 		"verified": false
 
 	},
@@ -54,7 +57,8 @@
 		"time": "8:00 PM",
 		"city": "Paris",
 		"country": "France",
-		"icon" : "mic2.jpg",
+		"icon" : "adele2.jpg",
+		"promo": "adele.mp3",
 		"verified": true
 
 	},
@@ -69,7 +73,8 @@
 		"time": "8:00 PM",
 		"city": "Munich",
 		"country": "Germany",
-		"icon" : "mic1.png",
+		"icon" : "adele1.png",
+		"promo": "adele.mp3",
 		"verified": true
 
 	},
@@ -84,7 +89,8 @@
 		"time": "8:00 PM",
 		"city": "London",
 		"country": "United Kingdom",
-		"icon" : "concert2.jpg",
+		"icon" : "metallica1.jpg",
+		"promo": "metallica.mp3",
 		"verified": true
 
 	},
@@ -99,7 +105,8 @@
 		"time": "8:00 PM",
 		"city": "Turin",
 		"country": "Italy",
-		"icon" : "concert4.jpg",
+		"icon" : "metallica3.jpg",
+		"promo": "metallica.mp3",
 		"verified": false
 	},
 	{
@@ -113,7 +120,8 @@
 		"time": "8:00 PM",
 		"city": "Madrid",
 		"country": "Spain",
-		"icon" : "concert3.jpg",
+		"icon" : "metallica2.jpg",
+		"promo": "metallica.mp3",
 		"verified": true
 	}
 ]

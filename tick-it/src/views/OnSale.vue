@@ -14,6 +14,8 @@
             <br>
             </p>
         </b-card-text>
+        <audio controls :src="buildIconUrl(item.promo)" type="audio/mpeg">
+        </audio>
         <b-input-group class="mt-3" v-if="!isMobile()">
             <template v-slot:prepend>
                 <b-input-group-text >{{quantity}} Tickets</b-input-group-text>
@@ -128,6 +130,10 @@ export default {
 
 .num-tickets{
     text-align: left;
+}
+
+audio{
+    float: left;
 }
 
 </style>

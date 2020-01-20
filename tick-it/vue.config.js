@@ -10,7 +10,8 @@ const options = {
     'b-card-img': 'src',
     'b-card-img-lazy': ['src', 'blank-src'],
     'b-carousel-slide': 'img-src',
-    'b-embed': 'src'
+    'b-embed': 'src',
+    'audio' : 'src'
   }
 }
 
@@ -30,7 +31,8 @@ module.exports = {
           'b-card-img': 'src',
           'b-card-img-lazy': ['src', 'blank-src'],
           'b-carousel-slide': 'img-src',
-          'b-embed': 'src'
+          'b-embed': 'src',
+          'audio' : 'src'
         }
 
         return options
