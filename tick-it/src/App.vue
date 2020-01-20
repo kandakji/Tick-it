@@ -42,6 +42,7 @@
                             <em>User</em>
                         </template>
                         <b-dropdown-item v-if="signedOn"  href="/profile">Profile</b-dropdown-item>
+						<b-dropdown-item v-if="signedOn"  href="/mylistings">My Tick-Its</b-dropdown-item>
                         <b-dropdown-item v-if="signedOn" v-on:click="signOut" href="#">Sign Out</b-dropdown-item>
                         <b-dropdown-item v-else href="#" v-b-modal="'signin-form'">Sign In</b-dropdown-item>
                     </b-nav-item-dropdown>
