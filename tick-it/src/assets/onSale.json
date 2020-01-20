@@ -12,6 +12,7 @@
 		"country": "France",
 		"icon" : "adele1.png",
 		"promo": "adele.mp3",
+		"price":"50",
 		"verified": false
 	},
 	{
@@ -27,38 +28,7 @@
 		"country": "United Kingdom",
 		"icon" : "adele2.jpg",
 		"promo": "adele.mp3",
-		"verified": true
-
-	},
-	{
-		"id": 3,
-		"title": "Adele 25",
-		"artist": "Adele",
-		"numTickets": "5",
-		"minTickets": "2",
-		"venue": "Royal Swedish Opera",
-		"date": "2020-01-24",
-		"time": "8:00 PM",
-		"city": "Stockholm",
-		"country": "Sweden",
-		"icon" : "adele1.png",
-		"promo": "adele.mp3",
-		"verified": false
-
-	},
-	{
-		"id": 4,
-		"title": "Adele 25",
-		"artist": "Adele",
-		"numTickets": "5",
-		"minTickets": "2",
-		"venue": "Moulin Rouge",
-		"date": "2020-01-26",
-		"time": "8:00 PM",
-		"city": "Paris",
-		"country": "France",
-		"icon" : "adele2.jpg",
-		"promo": "adele.mp3",
+		"price":"65",
 		"verified": true
 
 	},
@@ -75,6 +45,7 @@
 		"country": "Germany",
 		"icon" : "adele1.png",
 		"promo": "adele.mp3",
+		"price":"60",
 		"verified": true
 
 	},
@@ -91,6 +62,7 @@
 		"country": "United Kingdom",
 		"icon" : "metallica1.jpg",
 		"promo": "metallica.mp3",
+		"price":"45",
 		"verified": true
 
 	},
@@ -107,7 +79,40 @@
 		"country": "Italy",
 		"icon" : "metallica3.jpg",
 		"promo": "metallica.mp3",
+		"price":"70",
 		"verified": false
+	},
+	{
+		"id": 14,
+		"title": "Ariana Grande Tour",
+		"artist": "Ariana Grande",
+		"numTickets": "1",
+		"minTickets": "1",
+		"venue": "Helsinki Music Center",
+		"date": "2020-01-25",
+		"time": "6:00 PM",
+		"city": "Helsinki",
+		"country": "Finland",
+		"icon" : "grande1.jpg",
+		"verified": true,
+		"promo": "grande.mp3",
+		"price":"80"
+	},
+	{
+		"id": 15,
+		"title": "Ariana Grande Tour",
+		"artist": "Ariana Grande",
+		"numTickets": "1",
+		"minTickets": "1",
+		"venue": "Helsinki Music Center",
+		"date": "2020-01-25",
+		"time": "6:00 PM",
+		"city": "Helsinki",
+		"country": "Finland",
+		"icon" : "grande2.jpg",
+		"verified": false,
+		"promo": "grande.mp3",
+		"price":"85"
 	},
 	{
 		"id": 8,
@@ -122,6 +127,7 @@
 		"country": "Spain",
 		"icon" : "metallica2.jpg",
 		"promo": "metallica.mp3",
+		"price":"50",
 		"verified": true
 	}
 ]

@@ -76,14 +76,17 @@ export default {
     text-align: left;
     display: block;
     margin-top: 2vw;
+    width: 100%;
 }
 
 .card-subtitle{
     text-align: left;
+    width: 100%;
 }
 
 .card-text {
     text-align: left;
+    width: 100%;
 }
 
 .card-title .badge{
@@ -126,6 +129,12 @@ export default {
 
 audio{
     float: left;
+    width: 100%;
+}
+
+.num-tickets{
+    width: 60%;
+    margin-bottom: 10%;
 }
 
 </style>

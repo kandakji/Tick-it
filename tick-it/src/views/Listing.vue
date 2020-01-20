@@ -13,8 +13,10 @@
 							<div class="card-holder">
                             <div class="card-info">
                                 <b-card-text>
+                                    <b-badge v-if="sItem.verified" variant="success">Verified</b-badge>
                                     <p>At {{ sItem.venue }}</p>
                                     <p>On {{ sItem.date }} - {{sItem.city}},{{sItem.country}}</p>
+                                    <b-badge class="price" variant="info"><s>{{parseInt(sItem.price) +10 }} $</s></b-badge><b-badge class="price" variant="success"> {{sItem.price}} $</b-badge>
                                 </b-card-text>
                                 <div class="card-btn">
                                     <b-button v-bind:href="'/onsale/'+ sItem.id" variant="primary">Buy Now</b-button>
@@ -36,6 +38,7 @@
                             <div class="card-holder">
 							<div class="card-info">
                                 <b-card-text>
+                                    <b-badge v-if="rItem.verified" variant="success">Verified</b-badge>
                                     <p>At {{ rItem.venue }}</p>
                                     <p>On {{ rItem.date }} - {{rItem.city}},{{rItem.country}}</p>
                                 </b-card-text>
@@ -75,11 +78,12 @@
         },
         computed: {
             filteredOnSale: function(){
-                return this.onSaleItems.filter((item)=> item.title.toLowerCase().match(this.search.toLowerCase()));
+                return this.onSaleItems.filter((item)=> item.title.toLowerCase().match(this.search.toLowerCase()) || item.artist.toLowerCase().match(this.search.toLowerCase()) );
             },
             filteredRequested: function(){
-                return this.requestedItems.filter((item)=> item.title.toLowerCase().match(this.search.toLowerCase()));
-            }
+                return this.requestedItems.filter((item)=> item.title.toLowerCase().match(this.search.toLowerCase()) || item.artist.toLowerCase().match(this.search.toLowerCase()) );
+            },
+            originalPrice : function(){return this.requestedItems.map((item) => parseInt(item.price)+10 )}
         },
         watch: {
             '$route' (to, from) {
@@ -99,6 +103,8 @@
 <style>
 .card{
     width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
     display: table;
 }
 .card-body{
@@ -149,8 +155,8 @@ a:hover {
 }
 
 .card-img img{
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
     margin: 5%
 }
 
@@ -170,5 +176,11 @@ a:hover {
 }
 .btn-primary:hover{
     background-color: #14b5ce;
+}
+
+.price{
+    font-size: 150%;
+    margin-top: 2%;
+    margin-right: 2%;
 }
 </style>

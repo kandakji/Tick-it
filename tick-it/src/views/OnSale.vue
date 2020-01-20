@@ -12,6 +12,7 @@
                 At {{ item.venue }}<br>
             On {{ item.date }} - {{item.city}},{{item.country}}
             <br>
+            <b-badge class="price" variant="info"><s>{{originalPrice}} $</s></b-badge><b-badge class="price" variant="success"> {{item.price}} $</b-badge>
             </p>
         </b-card-text>
         <audio controls :src="buildIconUrl(item.promo)" type="audio/mpeg">
@@ -34,6 +35,7 @@
             :max="item.numTickets"
             ></b-form-input>
         </div>
+        
         <b-button href="#" variant="primary">Buy Now</b-button>
         </b-card>
     </div>
@@ -62,6 +64,9 @@ export default {
     },
     created(){
         this.quantity = this.item.minTickets;
+    },
+    computed:{
+        originalPrice : function(){return parseInt(this.item.price)+10}
     }
 }
 </script>
@@ -76,14 +81,17 @@ export default {
     text-align: left;
     display: block;
     margin-top: 2vw;
+    width: 100%;
 }
 
 .card-subtitle{
     text-align: left;
+    width: 100%;
 }
 
 .card-text {
     text-align: left;
+    width: 100%;
 }
 
 .card-title .badge{
@@ -134,6 +142,20 @@ export default {
 
 audio{
     float: left;
+    width: 100%;
 }
+
+.num-tickets{
+    width: 60%;
+    margin-bottom: 10%;
+}
+
+.price{
+    font-size: 150%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+}
+
 
 </style>

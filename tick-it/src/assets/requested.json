@@ -1,5 +1,20 @@
 [
 	{
+		"id": 17,
+		"title": "High On life World Tour",
+		"artist": "Snoop Dogg ",
+		"numTickets": "1",
+		"minTickets": "1",
+		"venue": "Victoria Park",
+		"date": "2020-01-22",
+		"time": "10:00 PM",
+		"city": "London",
+		"country": "United Kingdom",
+		"icon" : "snoop.jpg",
+		"verified": true,
+		"promo": "snoop.mp3"
+	},
+	{
 		"id": 9,
 		"title": "World Wired Tour",
 		"artist": "Metallica",
@@ -45,6 +60,38 @@
 		"promo": "grande.mp3"
 	},
 	{
+		"id": 3,
+		"title": "Adele 25",
+		"artist": "Adele",
+		"numTickets": "5",
+		"minTickets": "2",
+		"venue": "Royal Swedish Opera",
+		"date": "2020-01-24",
+		"time": "8:00 PM",
+		"city": "Stockholm",
+		"country": "Sweden",
+		"icon" : "adele1.png",
+		"promo": "adele.mp3",
+		"verified": false
+
+	},
+	{
+		"id": 4,
+		"title": "Adele 25",
+		"artist": "Adele",
+		"numTickets": "5",
+		"minTickets": "2",
+		"venue": "Moulin Rouge",
+		"date": "2020-01-26",
+		"time": "8:00 PM",
+		"city": "Paris",
+		"country": "France",
+		"icon" : "adele2.jpg",
+		"promo": "adele.mp3",
+		"verified": true
+
+	},
+	{
 		"id": 12,
 		"title": "Ariana Grande Tour",
 		"artist": "Ariana Grande",
@@ -75,36 +122,6 @@
 		"promo": "grande.mp3"
 	},
 	{
-		"id": 14,
-		"title": "Ariana Grande Tour",
-		"artist": "Ariana Grande",
-		"numTickets": "1",
-		"minTickets": "1",
-		"venue": "Helsinki Music Center",
-		"date": "2020-01-25",
-		"time": "6:00 PM",
-		"city": "Helsinki",
-		"country": "Finland",
-		"icon" : "grande1.jpg",
-		"verified": true,
-		"promo": "grande.mp3"
-	},
-	{
-		"id": 15,
-		"title": "Ariana Grande Tour",
-		"artist": "Ariana Grande",
-		"numTickets": "1",
-		"minTickets": "1",
-		"venue": "Helsinki Music Center",
-		"date": "2020-01-25",
-		"time": "6:00 PM",
-		"city": "Helsinki",
-		"country": "Finland",
-		"icon" : "grande2.jpg",
-		"verified": false,
-		"promo": "grande.mp3"
-	},
-	{
 		"id": 16,
 		"title": "High On life World Tour",
 		"artist": "Snoop Dogg ",
@@ -117,21 +134,6 @@
 		"country": "Sweden",
 		"icon" : "snoop.jpg",
 		"verified": false,
-		"promo": "snoop.mp3"
-	},
-	{
-		"id": 17,
-		"title": "High On life World Tour",
-		"artist": "Snoop Dogg ",
-		"numTickets": "1",
-		"minTickets": "1",
-		"venue": "Victoria Park",
-		"date": "2020-01-22",
-		"time": "10:00 PM",
-		"city": "London",
-		"country": "United Kingdom",
-		"icon" : "snoop.jpg",
-		"verified": true,
 		"promo": "snoop.mp3"
 	}
 ]
