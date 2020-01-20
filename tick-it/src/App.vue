@@ -184,6 +184,7 @@ export default {
                     console.log("Sign In Successful");
                     sessionStorage.setItem('signin',this.signinEmail);
                     this.signedOn = true;
+                    this.signinName = JSON.parse(localStorage.getItem(this.signinEmail)).name;
                     this.$refs['signin-modal'].hide()
                 }else{
                     console.log("Wrong password");

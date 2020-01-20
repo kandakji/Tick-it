@@ -88,7 +88,6 @@
             onSale: function(){
 				var tickOnSale = localStorage.getItem('tickOnSale');
 				if (tickOnSale !== "undefined" && tickOnSale){
-				    alert(tickOnSale);
 					return JSON.parse(tickOnSale);
 				}else {
 					return [];
