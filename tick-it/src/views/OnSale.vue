@@ -36,7 +36,7 @@
             ></b-form-input>
         </div>
         
-        <b-button href="#" variant="primary">Buy Now</b-button>
+        <b-button href="#" @click="makeToast('info')" variant="primary">Buy Now</b-button>
         </b-card>
     </div>
 </template>
@@ -60,7 +60,13 @@ export default {
             } else {
                 return false
             }
-        }
+        },makeToast() {
+        this.$bvToast.toast('Thank you for your purchase.\n\nEnjoy the event!', {
+          title: `Purchase Successful`,
+          variant: 'info',
+          solid: true
+        })
+      }
     },
     created(){
         this.quantity = this.item.minTickets;

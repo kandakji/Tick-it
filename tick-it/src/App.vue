@@ -207,6 +207,7 @@ export default {
                     localStorage.setItem(this.signupEmail, JSON.stringify({name: this.signupName, password: this.signupPassword,}));
                     sessionStorage.setItem('signin', this.signupEmail);
                     this.signedOn = true;
+                    this.signinName = JSON.parse(localStorage.getItem(this.signinEmail)).name;
                     this.$refs['signin-modal'].hide()
                 }
             }else{

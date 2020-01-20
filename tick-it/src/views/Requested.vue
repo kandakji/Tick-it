@@ -34,7 +34,7 @@
             :max="item.numTickets"
             ></b-form-input>
         </div>
-        <b-button href="#" variant="primary">Respond Now</b-button>
+        <b-button href="#" @click="makeToast('info')" variant="primary">Respond Now</b-button>
         </b-card>
     </div>
 </template>
@@ -58,7 +58,13 @@ export default {
             } else {
                 return false
             }
-        }
+        },makeToast() {
+        this.$bvToast.toast('Thank you for responding to the request.\n\nStay awesome!', {
+          title: `Offer Successful`,
+          variant: 'info',
+          solid: true
+        })
+      }
     },
     created(){
         this.quantity = this.item.minTickets;
