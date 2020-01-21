@@ -100,7 +100,7 @@
 
 
 
-<style>
+<style scoped>
 .card{
     width: 100%;
     padding-left: 3%;
@@ -173,6 +173,7 @@ a:hover {
     width: 90%;
     font-size: 90%;
     white-space: nowrap;
+    color: azure;
 }
 .btn-primary:hover{
     background-color: #14b5ce;

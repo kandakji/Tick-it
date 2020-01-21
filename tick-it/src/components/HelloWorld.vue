@@ -50,4 +50,18 @@
         opacity: 1;
     }
 
+    .btn-primary {
+        margin: 1%;
+        background-color: #17a2b8;
+        border-color: #ffffff;
+        float: none;
+        width: 90%;
+        font-size: 90%;
+        white-space: nowrap;
+    }
+
+    .btn-primary:hover {
+        background-color: #14b5ce;
+    }
+
 </style>
