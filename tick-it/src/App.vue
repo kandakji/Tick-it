@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="app" class="h-100">
 
         <b-navbar toggleable="lg" type="dark" variant="info">
             <b-navbar-brand href="#"><v-icon name="check" scale="2"/> Tick-It </b-navbar-brand>
@@ -250,6 +250,10 @@ export default {
     @import 'node_modules/bootstrap-vue/src/index.scss';
 
 
+    html, body {
+        height: 100%;
+    }
+    
     #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
